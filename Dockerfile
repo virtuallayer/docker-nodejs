@@ -3,9 +3,9 @@ FROM phusion/baseimage:0.9.17
 RUN apt-get update
 RUN apt-get install -y wget python build-essential
 
-RUN wget https://nodejs.org/download/release/v0.10.25/node-v0.10.25.tar.gz --no-check-certificate
-RUN tar zxvf node-v0.10.25.tar.gz
-RUN cd node-v0.10.25 && ./configure && make && make install
+RUN wget https://nodejs.org/download/release/v0.12.7/node-v0.12.7.tar.gz --no-check-certificate
+RUN tar zxvf node-v0.12.7.tar.gz
+RUN cd node-v0.12.7 && ./configure && make && make install
 
 RUN ln -s /usr/local/bin/node /usr/bin/node
 RUN ln -s /usr/local/bin/node /usr/bin/nodejs
